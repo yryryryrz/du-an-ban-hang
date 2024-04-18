@@ -1,0 +1,40 @@
+.arrivals-img {
+    object-fit: cover;
+    transition: transform 0.6s;
+    cursor: pointer;
+    .arrivals-p {
+        display: block;
+        transition: transform 0.6s;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .arrivals-span {
+        display: none;
+        position: relative;
+        font-size: 16px;
+        transition: transform 0.6s;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    &:hover {
+        transform: scale(0.95);
+        transition: transform 0.6s;
+
+        .arrivals-p {
+            display: none;
+            transition: transform 0.6s;
+        }
+        .arrivals-span {
+            display: inline-block;
+            transition: transform 0.6s;
+        }
+    }
+}
+.arrivals-a {
+    color: #202020;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

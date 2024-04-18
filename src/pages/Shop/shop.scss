@@ -1,0 +1,76 @@
+.shop {
+    padding-top: var(--default-layout-header-height);
+}
+.border-bt {
+    padding-top: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.header-h1 {
+    display: flex;
+    padding: 0 108px;
+    justify-content: space-between;
+    h1 {
+        font-size: 28px;
+        margin: 25px 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        a {
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        span {
+            font-size: 18px;
+            padding: 0 10px;
+            color: #8f8f8f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+
+.body-padding {
+    padding: 48px 108px;
+}
+
+.showing-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8f8f8f;
+
+    span {
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    select {
+        width: 306px;
+        height: 36px;
+        font-size: 16px;
+        padding: 6px 36px 6px 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        &:focus-visible {
+            border: 2px solid rgb(151, 201, 248);
+            border-radius: 4px;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 48px;
+    ul {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        li {
+            padding: 6px 12px;
+        }
+        .pagination-one {
+            color: white;
+            background-color: #000;
+        }
+    }
+}

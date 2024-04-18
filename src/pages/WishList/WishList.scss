@@ -1,0 +1,22 @@
+@import 'src/components/GlobalStyles/GlobalStyles.scss';
+.Wish-list {
+    padding-top: var(--default-layout-header-height);
+}
+.wish-List_section {
+    padding: 24px 108px;
+    .wish-route {
+        align-items: center;
+        li a {
+            font-size: 18px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 0 12px;
+        }
+        span {
+            font-size: 18px;
+            color: #8f8f8f;
+        }
+    }
+}
