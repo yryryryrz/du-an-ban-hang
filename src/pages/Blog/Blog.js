@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Blog.scss';
 import ContactGmail from '../Section/ContactGmail';
@@ -6,10 +6,18 @@ import Footer from '~/layouts/componentsHeader/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import InstargramSix from '../Section/InstargramSix';
+import ReactPaginate from 'react-paginate';
+
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
 function Blog() {
+    const [itemOffset, setItemOffset] = useState(0);
+
+    const handlePageClick = (event) => {
+        setItemOffset(itemOffset);
+    };
     return (
         <div className={cx('blog')}>
             <section>
@@ -189,27 +197,26 @@ function Blog() {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div className={cx('pagination')}>
-                                <ul>
-                                    <li className={cx('pagination-one')}>
-                                        <a href="/">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ReactPaginate
+                            nextLabel={<FontAwesomeIcon icon={faAngleRight} />}
+                            onPageChange={handlePageClick}
+                            pageRangeDisplayed={3}
+                            marginPagesDisplayed={3}
+                            pageCount={5}
+                            previousLabel={<FontAwesomeIcon icon={faAngleLeft} />}
+                            pageClassName="page-item"
+                            pageLinkClassName="page-link"
+                            previousClassName="page-item"
+                            previousLinkClassName="page-link"
+                            nextClassName="page-item"
+                            nextLinkClassName="page-link"
+                            breakLabel="..."
+                            breakClassName="page-item"
+                            breakLinkClassName="page-link"
+                            containerClassName="pagination"
+                            activeClassName="active"
+                            renderOnZeroPageCount={null}
+                        />
                     </div>
                     <div className={cx('right row-span-3')}>
                         <div className={cx('input-search')}>

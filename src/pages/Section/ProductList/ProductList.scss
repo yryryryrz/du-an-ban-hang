@@ -38,3 +38,40 @@
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.loading {
+    font-size: 20px;
+    display: flex;
+    color: #8f8f8f;
+    justify-content: center;
+}
+// pagination
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.active {
+    background-color: #b1b1b1;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.page-link {
+    padding: 0 10px;
+}
+
+.page-item {
+    list-style: none;
+    padding: 2px 12px;
+    height: 31.5px;
+    width: 31.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}

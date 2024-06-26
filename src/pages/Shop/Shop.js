@@ -18,7 +18,7 @@ function Shop() {
                             <nav className="container mx-auto">
                                 <a href="/">Home</a>
                                 <span>/</span>
-                                <a href="/Page">Page</a>
+                                <a href="/wishlist">Wish list</a>
                                 <span>/</span>
                                 <span>Shop</span>
                             </nav>
@@ -28,42 +28,7 @@ function Shop() {
             </div>
             <section className="container mx-auto">
                 <div className="body-padding">
-                    <div className={cx('showing-left')}>
-                        <div>
-                            <span>Showing 12 of 55 results</span>
-                        </div>
-                        <div>
-                            <select name="" id="">
-                                <option value="Default Sorting">Default Sorting</option>
-                                <option value="Size">Size</option>
-                                <option value="Price">Price</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className=" ">
-                        <ProductList />
-                        <div>
-                            <div className={cx('pagination')}>
-                                <ul>
-                                    <li className={cx('pagination-one')}>
-                                        <a href="/">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="/">5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <ProductList />
                 </div>
             </section>
             <section>
